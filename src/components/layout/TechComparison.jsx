@@ -57,7 +57,7 @@ const TechComparison = () => {
           </motion.h2>
           <p className="text-gray-600 text-lg">
             Lyophilization (Freeze-drying) is the core of our competitive edge, ensuring 
-            maximum retention of vital nutrients without artificial preservatives[cite: 306, 307].
+            maximum retention of vital nutrients without artificial preservatives.
           </p>
         </div>
 
@@ -73,7 +73,7 @@ const TechComparison = () => {
                 className="bg-surio-offwhite rounded-3xl p-8 border border-gray-100 hover:shadow-xl transition-shadow"
               >
                 <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
-                  {/* Feature Icon & Title */}
+                  
                   <div className="flex items-center gap-4 min-w-[250px]">
                     <div className="p-3 bg-white rounded-2xl shadow-sm italic">
                       {item.icon}
@@ -83,7 +83,6 @@ const TechComparison = () => {
 
                   {/* Comparison Bars */}
                   <div className="flex-1 w-full space-y-4">
-                    {/* Surio Standard */}
                     <div className="space-y-1">
                       <div className="flex justify-between text-xs font-bold uppercase tracking-widest">
                         <span className="text-emerald-600">Surio Freeze-Drying</span>
@@ -131,7 +130,7 @@ const TechComparison = () => {
         >
           <div className="inline-block bg-emerald-50 px-6 py-3 rounded-full border border-emerald-100">
             <p className="text-emerald-800 font-bold text-sm">
-              Standard: Preserves 95-97% of active compounds vs 30-50% loss in conventional drying[cite: 41, 321].
+              Standard: Preserves 95-97% of active compounds vs 30-50% loss in conventional drying.
             </p>
           </div>
         </motion.div>
