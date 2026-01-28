@@ -45,7 +45,6 @@ const Footer = () => {
                 <MapPin size={20} className="text-surio-green shrink-0" />
                 <span className="text-sm text-gray-600 font-medium leading-tight">
                   14/7 Mau Than, Can Tho City, <br /> Vietnam (Tra Noc IP)
-                  [cite: 16, 130]
                 </span>
               </li>
               <li className="flex items-center space-x-4">
