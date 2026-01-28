@@ -98,7 +98,6 @@ const CompanyOverview = () => {
           <div className="relative">
             <div className="aspect-square relative flex items-center justify-center max-w-2xl mx-auto">
               
-              {/* Central Glow Background */}
               <div className="absolute inset-0 bg-emerald-50 rounded-full scale-90 blur-3xl opacity-40" />
 
               <div className="absolute inset-0 border-2 border-dashed border-emerald-300/70 rounded-full" />
