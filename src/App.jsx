@@ -4,33 +4,43 @@ import Header from "./components/layout/Header";
 import Hero from "./components/layout/Hero";
 import Footer from "./components/layout/Footer";
 
+// TỔNG QUAN: Giới thiệu năng lực sản xuất 7-10 tấn/tháng tại Cần Thơ
 const CompanyOverview = lazy(
   () => import("./components/layout/CompanyOverview"),
 );
+
+// CỐT LÕI: Công nghệ sấy thăng hoa (Lyophilization) - Trái tim của sự khác biệt
 const CoreTechnology = lazy(() => import("./components/layout/CoreTechnology"));
+
+// PHÁP LÝ: Chứng chỉ FDA, ISO 22000 & lộ trình Halal để vươn ra toàn cầu
 const StrategicCertifications = lazy(
   () => import("./components/layout/StrategicCertifications"),
 );
+
+// SẢN PHẨM: Danh mục B2B đa dạng từ Sữa chua sấy (10 tỷ lợi khuẩn) đến Nấm dược liệu
 const ProductPortfolio = lazy(
   () => import("./components/layout/ProductPortfolio"),
 );
+
+// CON NGƯỜI: Đội ngũ chuyên gia từ Israel & Đại học Cần Thơ dẫn dắt R&D
 const Leadership = lazy(() => import("./components/layout/Leadership"));
+
+// HÀNH ĐỘNG: Kêu gọi đối tác liên hệ để nhận tư vấn giải pháp dinh dưỡng
 const ContactCTA = lazy(() => import("./components/layout/ContactCTA"));
-// 1. THÊM TẠI ĐÂY: Traceability (Truy xuất nguồn gốc)
-// Tài liệu nhấn mạnh nguồn nguyên liệu từ Mekong Delta [cite: 13, 191]
+
+// MINH BẠCH: Truy xuất nguồn gốc 100% từ nông trại Mekong Delta đến thành phẩm
 const Traceability = lazy(() => import("./components/layout/Traceability"));
 
-// 2. THÊM TẠI ĐÂY: TechComparison (So sánh công nghệ)
-// Cần làm rõ ưu thế 97% dinh dưỡng của sấy thăng hoa so với sấy nhiệt [cite: 28, 41]
+// ƯU THẾ: So sánh khoa học giữa sấy lạnh -50°C (giữ 97% dưỡng chất) vs sấy nhiệt
 const TechComparison = lazy(() => import("./components/layout/TechComparison"));
 
-// 3. THÊM TẠI ĐÂY: OEMWorkflow (Quy trình hợp tác)
-// Giải thích cách Surio hỗ trợ từ công thức R&D đến thành phẩm [cite: 194, 522]
+// Giải thích cách Surio hỗ trợ từ công thức R&D đến thành phẩm
 const OEMWorkflow = lazy(() => import("./components/layout/OEMWorkflow"));
 
-// 4. THÊM TẠI ĐÂY: StrategicPartners (Đối tác chiến lược)
-// Hiển thị logo Mycospring, Can Tho University, Mămmy... 
-const StrategicPartners = lazy(() => import("./components/layout/StrategicPartners"));
+// Hiển thị logo Mycospring, Can Tho University, ...
+const StrategicPartners = lazy(
+  () => import("./components/layout/StrategicPartners"),
+);
 
 const App = () => {
   return (
@@ -53,27 +63,24 @@ const App = () => {
                     <Hero />
                     <CompanyOverview />
 
-                    {/* VỊ TRÍ 1: Thêm Traceability ngay sau Overview */}
-                    {/* Để khách hàng thấy ngay sự minh bạch từ nông trại địa phương [cite: 77, 401] */}
+                    {/* Để khách hàng thấy ngay sự minh bạch từ nông trại địa phương */}
                     <Traceability />
 
                     <CoreTechnology />
 
-                    {/* VỊ TRÍ 2: Thêm TechComparison để bổ trợ cho CoreTechnology */}
-                    {/* Phân tích sâu về dải nhiệt $-40^{\circ}C$ đến $-50^{\circ}C$ [cite: 40, 319] */}
+                    {/* Phân tích sâu về dải nhiệt $-40^{\circ}C$ đến $-50^{\circ}C$ */}
                     <TechComparison />
 
                     <StrategicCertifications />
+
                     <ProductPortfolio />
 
-                    {/* VỊ TRÍ 3: Thêm OEMWorkflow sau khi show sản phẩm */}
-                    {/* Để khách hàng biết "Làm thế nào để đặt hàng OEM?" [cite: 536, 537] */}
+                    {/* Để khách hàng biết "Làm thế nào để đặt hàng OEM?" */}
                     <OEMWorkflow />
 
                     <Leadership />
 
-                    {/* VỊ TRÍ 4: Thêm StrategicPartners trước khi chốt hạ bằng Contact */}
-                    {/* Tạo niềm tin cuối cùng thông qua các đối tác hiện hữu [cite: 81] */}
+                    {/* Tạo niềm tin cuối cùng thông qua các đối tác hiện hữu */}
                     <StrategicPartners />
 
                     <ContactCTA />
